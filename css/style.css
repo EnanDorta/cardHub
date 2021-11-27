@@ -1,0 +1,163 @@
+@import url('https://fonts.google.com/specimen/Inter');
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+:root{
+  --font01: 'Inter', sans-serif;
+  --font02: 'Lexend Deca', sans-serif;
+  --colorCard: hsl(244, 38%, 16%);
+  --colorAcent: hsl(277, 64%, 61%);
+  --colorText: hsla(0, 0%, 100%, 0.75); 
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(233, 47%, 7%);
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 1920px)  {
+  .container{
+    display: flex;
+    justify-content: center;
+  }
+  .card-content{
+    margin-top: 5rem;
+    position: relative;
+    height: 35rem;
+    width: 70%;
+    background-color: var(--colorCard);
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .wrapper-left{
+    width: 50%;
+    padding-left: 3.5rem;
+    padding-top: 3.5rem;
+  }
+  .left{
+    width: 100%;
+  }
+  .left #header{
+    width: 70%;
+    font-family: var(--font01);
+    margin-bottom: 4rem;
+  }
+  .left #header span{
+    color: var(--colorAcent);
+  }
+  .left #header h1{
+    font-size: 2.5rem;
+  }
+  .left #text-principal{
+    font-size: 1.7rem;
+    font-family: var(--font02); 
+    width: 70%;
+    margin-bottom: 7rem;
+    color: var(--colorText);
+    font-weight: 400;
+    line-height: 2.2rem;
+  }
+  .wrapper-numbers{
+    display: grid;
+    grid-template-columns: repeat(3 /  1fr) ;
+    grid-template-rows: repeat(6 /  1fr) ;
+  }
+  .wrapper-numbers p{
+    display: inline;
+  }
+  .number-companies{
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    text-transform: uppercase;
+    font-family: var(--font02);
+    font-size: 1.4rem;
+    font-weight: 700; 
+  }
+  .number-templates{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-transform: uppercase;
+    font-family: var(--font02);
+    font-size: 1.4rem;
+    font-weight: 700;  
+  }
+  .number-queries{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-transform: uppercase;
+    font-family: var(--font02);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .text p{
+    text-transform: uppercase;
+    font-family: var(--font01);
+    font-size: 0.8rem;
+    color: hsla(0, 0%, 100%, 0.6);
+  }
+  .right-wrapper{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--colorAcent);
+  }
+  .right-wrapper img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+  }
+  
+} 
+@media screen and (max-width: 1050px) {
+  .container{
+     background-color: red;
+     height: 100vh;
+     width: 100%;
+  }
+  .card-content{
+    position: relative;
+    margin-top: 1rem;
+    width: 30rem;
+    height: 60rem;
+    background-color: rgba(63, 37, 206, 0.712);
+  }
+  #header h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  #text-principal{
+    text-align: center;
+    font-size: 0.5rem;
+    color: var(--colorText);
+  }
+  .number-companies{
+    margin: auto;
+    font-size: 5px;
+  }
+  .number-templates{
+    margin: auto;
+    font-size: 5px;
+  }
+  .number-queries{
+    margin: auto;
+    font-size: 5px;
+  }
+  .right-wrapper{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-image: url(/img/image-header-mobile.jpg);
+     background-size: cover;
+    background-repeat: none;*/
+  }
+}
+
+
+
+
+
